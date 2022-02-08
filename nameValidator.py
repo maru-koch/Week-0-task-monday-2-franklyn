@@ -11,9 +11,10 @@ def nameValidator(name):
 
                     return firstName + ' ' + lastName
                 
-                else: return "First or last name less than five character"
+                else: return "First or last name less than five characters"
         
             except ValueError as err:
-                print("Single or more than two names not allowed:", err)
+                
+                return "Single or more than two names not allowed: {}".format(err)
 
-print(nameValidator("maruche farhgoeouse"))
+print(nameValidator("maruche far ghost"))
